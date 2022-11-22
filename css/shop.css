@@ -1,0 +1,105 @@
+/* 차량소개 */
+.cars .con {padding:80px 0;}
+.cars .con ul {width:1400px; margin:0 auto; text-align:center;}
+.cars .con ul li {display:inline-block; width:330px; margin:0px 6px 12px 6px; border:1px solid #dbdfda; cursor:pointer; transition:all .2s;}
+.cars .con ul li .img img {width:100%;}
+.cars .con ul li .tit {margin-top:10px; font-size:21px; transition:all .2s;}
+.cars .con ul li .txt {margin-top:20px; padding:0 25px; box-sizing:border-box; transition:all .2s;}
+.cars .con ul li .txt p {width:100%; margin-top:10px;}
+.cars .con ul li .txt .p3 span {line-height:28px;}
+.cars .con ul li .txt .p3 select {line-height:-1; border:0; background-color:#dbdfda;}
+.cars .con ul li .txt .p4 {font-size:18px;}
+.cars .con ul li .btn {padding:10px; box-sizing:border-box;}
+.cars .con ul li .btn button {width:100%; height:40px; margin-top:5px; font-weight:700; color:#fff; border-color:rgba(0,0,0,.1); background:#525850; transition:all .2s;}
+.cars .con ul li:hover {background:#666;}
+.cars .con ul li:hover .tit {color:#fff;}
+.cars .con ul li:hover .txt {color:#fff;}
+.cars .con ul li:hover .txt .p3 select {line-height:-1; border:0; background-color:#f2f2f2;}
+.cars .con ul li:hover .btn button {background:#ff7e00;}
+
+/* 예약안내 */
+.guide .con {width:800px; margin:0 auto; padding:80px 0;} 
+.guide .con .tit {font-size:27px;}
+.guide .con .txt {margin-top:30px; font-size:17px; color:#437200;}
+.guide .con table {margin-top:30px;}
+.guide .con table th {height:40px; padding:0 10px; font-weight:700; text-align:center; border:1px solid #dbdfda; background:#e3ebe0;}
+.guide .con table td {height:40px; padding:0 10px; text-align:center; border:1px solid #dbdfda;}
+.guide .con .sub_tit {margin-top:50px; font-size:27px;}
+.guide .con .sub_txt {margin-top:10px; line-height:30px; text-align:justify;}
+.guide .con .sub_txt .poi {display:inline-block; width:4px; height:4px; margin:13px 6px 0 0; background:#437200;}
+.guide .con .sub_txt .fw {font-weight:700;}
+
+/* 예약하기 */
+.reservation .con {width:1040px; margin:0 auto; padding:80px 0;} 
+.reservation .con:after {content:""; display:block; clear:both;}
+.reservation .con .contit {margin-bottom:30px; font-size:27px;}
+.reservation .con .book {float:left; width:calc(100% - 540px);margin-bottom:50px}
+.reservation .con .book .img {margin-bottom:30px; text-align:center;}
+.reservation .con .book table tr {border-bottom:1px solid #dbdfda;}
+.reservation .con .book table tr:first-child {border-top:1px solid #dbdfda;}
+.reservation .con .book table th {width:170px; height:50px; padding:10px 20px; font-weight:500; background:#f8faf7; box-sizing:border-box;}
+.reservation .con .book table td {padding:10px 20px; box-sizing:border-box;}
+.reservation .con .book table td input {height:40px; border-color:#dbdfda;}
+.reservation .con .book table td select {height:40px; border-color:#dbdfda;}
+.reservation .con .book table td .w-100 {width:327px;}
+.reservation .con .book table td .opt {float:left; margin:0 20px 10px 0;}
+.reservation .con .book table p {display:inline-block;}
+.reservation .con .book table .td_day .inp {position:relative;}
+.reservation .con .book table .td_day .inp input {width:135px;}
+.reservation .con .book table .td_day .inp i {position:absolute; right:6px; top:11px; font-size:20px; cursor:pointer;}
+.reservation .con .book table .td_day .txt {line-height:42px;}
+.reservation .con .book table .td_day .sel select {width:85px;}
+.reservation .con .book table .td_rdio .rdio {margin:-2px 20px 0 0;}
+.reservation .con .book table .td_won {font-size:17px; font-weight:700;}
+.reservation .con .book table .td_phone input {width:100px;}
+.reservation .con .book table td textarea {height:150px; line-height:20px; border-color:#dbdfda;}
+.reservation .con .book .cbox {margin:38px 0 40px; text-align:center;}
+.reservation .con .book .cbox label {font-size:13px;}
+.reservation .con .book .btn {text-align:center;}
+.reservation .con .book .btn button {width:310px; height:40px; font-weight:700; color:#fff; border-color:rgba(0,0,0,.1); background:#525850; transition:all .2s;}
+.reservation .con .book .btn button:hover {background:#193110;}
+.reservation .con .item {float:right; width:500px; border:1px solid #dbdfda;}
+.reservation .con .item .img {margin-bottom:30px; text-align:center;}
+.reservation .con .item .tit {margin-bottom:10px; padding:0 30px; font-size:17px; box-sizing:border-box;}
+.reservation .con .item .txt {margin-bottom:30px; padding:0 30px; font-size:13px; line-height:25px; text-align:justify; box-sizing:border-box;}
+.reservation .con .item .txt .poi {display:inline-block; width:4px; height:4px; margin:10px 6px 0 0; background:#437200;}
+.reservation .con .item .txt .fw {font-weight:700;}
+.reservation .con .item table tr {border-bottom:1px solid #dbdfda;}
+.reservation .con .item table tr:first-child {border-top:1px solid #dbdfda;}
+.reservation .con .item table th {width:170px; height:50px; padding:10px 20px; font-weight:500; background:#f8faf7; box-sizing:border-box;}
+.reservation .con .item table td {padding:10px 20px; box-sizing:border-box;}
+.reservation .con .item table td input {height:40px; border-color:#dbdfda;}
+.reservation .con .item table td select {height:40px; border-color:#dbdfda;}
+.reservation .con .item table td .w-100 {width:327px;}
+.reservation .con .item table td .opt {float:left; margin:0 20px 10px 0;}
+.reservation .con .item table p {display:inline-block;}
+.reservation .con .item table .td_day .inp {position:relative;}
+.reservation .con .item table .td_day .inp input {width:135px;}
+.reservation .con .item table .td_day .inp i {position:absolute; right:6px; top:11px; font-size:20px; cursor:pointer;}
+.reservation .con .item table .td_day .txt {line-height:42px;}
+.reservation .con .item table .td_day .sel select {width:85px;}
+.reservation .con .item table .td_rdio .rdio {margin:-2px 20px 0 0;}
+.reservation .con .item table .td_won {font-size:17px; font-weight:700;}
+.reservation .con .item table .td_phone input {width:100px;}
+.reservation .con .item table td textarea {height:150px; line-height:20px; border-color:#dbdfda;}
+.reservation .con .item .cbox {margin:38px 0 40px; text-align:center;}
+.reservation .con .item .cbox label {font-size:13px;}
+.reservation .con .item .btn {text-align:center;}
+.reservation .con .item .btn button {width:310px; height:40px; font-weight:700; color:#fff; border-color:rgba(0,0,0,.1); background:#525850; transition:all .2s;}
+.reservation .con .item .btn .btn_medium {width:150px; height:30px; font-weight:500; color:#fff; border-color:rgba(0,0,0,.1); background:#525850; transition:all .2s;}
+.reservation .con .item .btn .btn_small {width:110px; height:30px; font-weight:500; color:#fff; border-color:rgba(0,0,0,.1); background:#525850; transition:all .2s;}
+.reservation .con .care {float:right; overflow-y:scroll; width:430px; height:146px; margin-top:10px; padding:5px 30px; font-size:13px; line-height:25px; text-align:justify; white-space:pre-wrap; border:1px solid #dbdfda; box-sizing:border-box;}
+.reservation .con .care span {display:inline-block; margin-bottom:10px; font-size:17px;}
+
+/* 예약확인 */
+.reservation_order .con {width:600px; margin:0 auto; padding:80px 0;} 
+.reservation_order .con:after {content:""; display:block; clear:both;}
+.reservation_order .con table tr {border-bottom:1px solid #dbdfda;}
+.reservation_order .con table tr:first-child {border-top:1px solid #dbdfda;}
+.reservation_order .con table th {width:150px; height:60px; padding:10px 20px; font-weight:700; background:#f8faf7; box-sizing:border-box;}
+.reservation_order .con table td {padding:10px 20px; line-height:1; box-sizing:border-box;}
+.reservation_order .con table td .fw {font-size:17px; font-weight:700; color:#437200;}
+.reservation_order .con table td .txt {line-height:23px;}
+.reservation_order .con .btn {margin-top:30px; text-align:center;}
+.reservation_order .con .btn button {width:197px; height:40px; font-weight:700; color:#fff; border-color:rgba(0,0,0,.1); background:#525850; transition:all .2s;}
+.reservation_order .con .btn button:hover {background:#193110;}

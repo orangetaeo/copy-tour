@@ -1,0 +1,32 @@
+/* header */
+header {z-index:99; position:fixed; left:0; top:0; width:100%; min-width:1300px; background:#fff; transition:all .2s;}
+header .top_menu {width:100%; border-bottom:1px solid #dbdfda; background:#e3ebe0;}
+header .top_menu .top_menu_inn {width:1200px; margin:0 auto;}
+header .top_menu .top_menu_inn:after {content:""; display:block; clear:both;}
+header .top_menu .top_menu_inn ul {float:right;}
+header .top_menu .top_menu_inn ul:after {content:""; display:block; clear:both;}
+header .top_menu .top_menu_inn ul li {float:left;}
+header .top_menu .top_menu_inn ul li a {display:block; height:30px; padding:0 16.5px; font-size:13px; line-height:30px; box-sizing:border-box;}
+header .top_menu .top_menu_inn ul li a:hover {text-decoration:underline;}
+header .top_menu .top_menu_inn ul .poi a {font-weight:700; color:#437200;}
+header .logo_area {width:100%; border-bottom:1px solid #dbdfda;}
+header .logo_area .logo_area_inn {position:relative; width:1200px; height:100px; margin:0 auto;}
+header .logo_area .logo_area_inn:after {content:""; display:block; clear:both;}
+header .logo_area .logo_area_inn h1 {position:absolute; left:50%; top:10px; width:80px; height:80px}
+header .logo_area .logo_area_inn .call {float:left; margin-top:37px; font-size:18px; font-weight:700; line-height:26px; cursor:pointer;}
+header .logo_area .logo_area_inn .call i {margin:3px 1px 0 0; font-size:22px;}
+header .logo_area .logo_area_inn .sear {float:right; margin-top:37px; margin-left:5px; line-height:26px; border-bottom:1px solid #333;}
+header .logo_area .logo_area_inn .sear input {width:170px; border:0;}
+header .logo_area .logo_area_inn .sear input::placeholder {color:#aaa;}
+header .logo_area .logo_area_inn .sear i {margin:2px 0 0 1px; font-size:23px; cursor:pointer;}
+header .gnb {width:100%; border-bottom:1px solid #dbdfda;}
+header .gnb ul {text-align:center;}
+header .gnb ul li {display:inline-block;}
+header .gnb ul li a {display:block; height:48px; padding:0 33px; font-size:16px; line-height:48px; box-sizing:border-box; transition:all .2s;}
+header .gnb ul li a i {font-size:19px; line-height:48px;}
+header .gnb ul li a:hover {font-size:16px; font-weight:700;}
+header .gnb ul .home {display:none;}
+
+header.on {top:-132px;}
+header.on .gnb {box-shadow:0 1px 7px rgba(0,0,0,.1);}
+header.on .gnb ul .home {display:inline-block;}

@@ -1,0 +1,268 @@
+<? include("../config.php3"); ?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Generic - Editorial by HTML5 UP</title>
+<!-- meta tag-->
+<? include "../head_common.html"; ?>	
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+	<!-- Main -->
+	<div id="main">
+		<div class="inner">
+
+			<!-- Header -->
+			<header id="header">
+                <a href="/" class="logo"><strong><?=$WNW[D_name_kr]?></strong> 예약하기</a>
+				<!-- Header icon -->
+				<? include "../include/header/icons.html"; ?>
+			</header>
+
+			<!-- 예약하는 숙소 -->
+			<section>
+				<header class="major">
+					<h2>예약하는 숙소 정보</h2>
+				</header>
+				<div class="table-wrapper">
+					<table class="alt">
+						<thead>
+							<tr>
+								<th>구분</th>
+								<th>내용</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>숙소명</td>
+								<td>인터콘티넨탈 푸꾸옥 롱비치 리조트</td>
+							</tr>
+							<tr>
+								<td>이용일 및 박수</td>
+								<td>2022.11.27 ~ 2022.11.30 (3박)</td>
+							</tr>
+							<tr>
+								<td>인원</td>
+								<td>성인 2 명, 아동 2 명</td>
+							</tr>
+							<tr>
+								<td>객실</td>
+								<td>클래식룸</td>
+							</tr>
+							<tr>
+								<td>엑스트라 베드</td>
+								<td>추가 안함</td>
+							</tr>
+							<tr>
+								<td>픽업서비스</td>
+								<td>공항픽업(왕복)</td>
+							</tr>
+							<tr>
+								<td>요금</td>
+								<td>985,000 원</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<!-- 여행자 정보 입력Form -->
+			<section>
+				<header class="major">
+					<h2>여행자 정보 입력</h2>
+				</header>											
+				<form method="post" action="#">
+					<div class="row gtr-uniform">
+						<div class="col-12 col-12-xsmall">
+							<select name="demo-category" id="demo-category">
+								<option value="예약자">예약자</option>
+								<option value="추가 여행자">추가 여행자</option>
+							</select>
+						</div>
+						<div class="col-6 col-6-xsmall">
+							<input type="name" name="demo-name" id="demo-name" value="" placeholder="한글이름" />
+						</div>
+						<div class="col-6 col-6-xsmall">
+							<input type="tel" maxlength="11" name="demo-name" id="demo-name" value="" placeholder="휴대폰번호(- 없이)" />
+						</div>
+						<div class="col-6 col-6-xsmall">
+							<input type="name" name="demo-name" pattern="[A-Z]+" id="demo-name" value="" placeholder="영문 성" />
+						</div>
+						<div class="col-6 col-6-xsmall">
+							<input type="name" name="demo-name" pattern="[A-Z]+" id="demo-name" value="" placeholder="영문 이름" />
+						</div>
+						<div class="col-6 col-6-xsmall">
+							<input type="date" name="demo-name" pattern="[A-Z]+" id="demo-name" value="" placeholder="생년월일" />
+						</div>
+						<div class="col-6 col-6-xsmall">
+							<select name="demo-category" id="demo-category">
+								<option value="남성">남성</option>
+								<option value="여성">여성</option>
+							</select>
+						</div>
+						<div class="col-6 col-6-xsmall">
+							<input type="text" name="demo-name" pattern="[A-Z]{1}[0-9]{8}" maxlength="9" value="" required placeholder="여권번호" />
+						</div>
+						<div class="col-6 col-6-xsmall">
+							<input type="date" name="demo-name" value="" required placeholder="여권만료일" />
+						</div>
+					<!-- 여행자 추가 -->
+						<div class="col-12">
+							<ul class="actions fit">
+								<li><a href="/reservation/booking.html" class="button primary fit">여행자 추가</a></li>
+								<li><a href="#" class="button fit">초기화</a></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</section>
+			<!-- 예약하는 숙소 -->
+			<section>
+				<header class="major">
+					<h2>여행자 리스트</h2>
+				</header>
+				<div class="table-wrapper">
+					<table class="alt">
+						<thead>
+							<tr>
+								<th><input type="checkbox" id="choice" name="choice" checked><label for="choice"></label></th>
+								<th>한글이름</th>
+								<th>영문성</th>
+								<th>영문이름</th>
+								<th>생년월일</th>
+								<th>성별</th>
+								<th>여권번호</th>
+								<th>여권만료일</th>
+								<th>휴대폰번호</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" id="choice1" name="choice" checked><label for="choice1"></label></td>
+								<td>홍길동</td>
+								<td>HONG</td>
+								<td>GILDONG</td>
+								<td>1980.11.20</td>
+								<td>남성</td>
+								<td>M99999999</td>
+								<td>2030.10.10</td>
+								<td>01012345678</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="choice2" name="choice" checked><label for="choice2"></label></td>
+								<td>홍길순</td>
+								<td>HONG</td>
+								<td>GILSOON</td>
+								<td>1980.11.20</td>
+								<td>여성</td>
+								<td>M99999999</td>
+								<td>2030.10.10</td>
+								<td>01012345678</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- 여행자 리스트 선택삭제 -->
+					<div class="col-12">
+						<ul class="actions">
+							<li><a href="#" class="button primary">선택삭제</a></li>
+							<li><a href="#" class="button primary">선택수정</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<!-- 추가요청사항 -->
+				<div class="col-12">
+					<textarea name="demo-message" id="demo-message" placeholder="남겨주실 말씀이 있으시면 입력해주세요." rows="3"></textarea>
+				</div>
+				<br />
+				<!-- 이용약관등의 동의 -->
+				<div class="col-12">
+					<input type="checkbox" id="demo-human0" name="demo-human" checked><label for="demo-human0">전체동의</label><br />
+					<input type="checkbox" id="demo-human1" name="demo-human" checked><label for="demo-human1"><a href="/agreement/agreement.html">이용약관 동의(필수)</a></label><span></span>
+					<input type="checkbox" id="demo-human2" name="demo-human" checked><label for="demo-human2"><a href="/agreement/policy.html">개인정보 처리방침(필수)</a></label>
+					<input type="checkbox" id="demo-human3" name="demo-human" checked><label for="demo-human3"><a href="/agreement/privacy_agree.html">개인정보 제3자 제공동의(필수)</a></label>
+					<input type="checkbox" id="demo-human4" name="demo-human" checked><label for="demo-human4"><a href="/agreement/marketing_agree.html">마케팅 활용 동의(선택)</a></label>
+				</div>
+				<!-- 예약 및 취소 -->
+				<div class="col-12">
+					<ul class="actions fit">
+						<li><a href="#" class="button primary fit">결제하기</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+			<!-- Content -->
+				<h2 id="content">예약 시 유의사항</h2>
+				<ul>
+					<li>예약 시 여권상에 기재된 정확한 영문이름과 생년월일을 입력바랍니다.</li>
+					<li>본인 귀책사유에 의한 입국거절 시, 별도의 환불은 어렵습니다.</li>
+				</ul>	
+				<h2 id="content">결제 안내</h2>
+				<ol>
+					<li>결제가 완료되야 객실이 확보 됩니다.</li>
+					<li>카드 결제 시 "세로고침", "뒤로가기"등을 하시면 승인이 이루어지지 않습니다.</li>
+					<li>무이자 할부는 결제 시 각 카드사의 무이자 안내를 확인 바랍니다.</li>
+					<li>결제 완료 후 객실이 마감된 경우 바로 환불 처리해 드립니다.</li>
+				</ol>
+
+				<h2 id="content">예약취소안내</h2>
+				<ol>
+					본 상품의 예약과 취소는 국외여행 표준약관이 적용됨을 알려드립니다.<br>
+					<br>
+					<h4>계약금 규정</h4>
+						예약일 기준 3일 이내에 1인당 100,000원을 납입하셔야합니다.<br>
+						위 계약금은 호텔, 항공, 현지 사정 등에 의하여 변경될 수 있으며, 상황에 따라 고객님의 결제시한은 당겨질 수 있습니다.<br>
+						단, 아래 명시되어 있는 취소료 규정 적용기간에 예약하신 고객님께서는 계약금보다 취소 수수료가 높을 시 취소 수수료 금액을 계약금으로 납부하셔야 합니다.<br>
+						<br>
+					<h4>취소료 규정</h4>
+						여행 취소시 국외여행표준약관 제 16조 소비자분쟁해결규정에 따라 아래의 비율로 취소료가 부과됩니다. (단, 당사의 귀책사유로 여행출발 취소 경우에도 동일한 규정이 적용됩니다.<br>
+						<li>여행개시 30일전(~30)까지 통보시: 계약금환급</li>
+						<li>여행개시 20일전(29~20)까지 통보시: 여행요금의 10% 배상</li>
+						<li>여행개시 10일전(19~10)까지 통보시: 여행요금의 15% 배상</li>
+						<li>여행개시 8일전(9~8)까지 통보시: 여행요금의 20% 배상</li>
+						<li>여행개시 1일전(7~1)까지 통보시: 여행요금의 30% 배상</li>
+						<li>여행개시 당일 통보시: 여행요금의 50%배상</li>
+						※ 여행출발일 이전 상해,질병,입원,사망등으로 여행을 취소하는 경우 [진단서] 증빙 근거하여 환불이 가능하며 출발일 기준 7일이내 증빙서류를 제출해주시기 바랍니다.(상세규정은 약관참조)
+				</ol>
+				<ol>
+					<h4>최저출발인원 미 충족 시 계약해제</h4>
+						당사는 최저행사인원이 충족되지 아니하여 여행계약을 해제하는 경우 여행개시 7일전까지 여행자에게 통지하여야 합니다.<br>
+						당사가 여행참가자 수 미달로 전항의 기일내 통지를 하지 아니하고 계약을 해제하는 경우 이미 지급받은 계약금 환급 외에 다음 각 항목의 1의 금액을 여행자에게 배상하여야 합니다.<br>
+						<li>여행개시 7일전(~7)까지 통지시 : 계약금 환급</li>
+						<li>여행개시 1일전(6~1)까지 통지시 : 여행요금의 30% 배상</li>
+						<li>여행개시 당일 통지시 : 여행요금의 50% 배상</li>
+				</ol>
+				<ol>
+					<h4>감염병의 발생으로 당사 또는 여행자의 계약해제</h4>
+					<li> 감염병 등의 발생으로 아래 각 호의 1에 해당하는 사유가 있는 경우 ‘당사’ 또는 여행자는 제 16조 제 1항의 손해배상액을 지급하지 아니하고 계약해제를 할 수 있습니다.</li>
+						<ol>
+							<li> 외국정부가 우리 국민에 대해 입국금지·격리조치 등 이에 준하는 명령을 발령하여 계약을 이행할 수 없는 경우</li>
+							<li> 계약체결 이후 외교부가 여행지역·국가에 여행경보 3단계(철수권고)·4단계(여행금지)를 발령하여 계약을 이행할 수 없는 경우</li>
+							<li> 항공·철도·선박 등의 운항이 중단되어 계약을 이행할 수 없는 경우</li>											
+						</ol>
+					<li> 계약체결 이후 외교부가 여행지역·국가에 특별여행주의보를 발령하거나 세계보건기구(WHO)가 감염병 경보 5단계 또는 6단계(세계적 대유행, 펜데믹)를 선언하여 계약을 이행하기 상당히 어려운 경우에는 ‘당사’ 또는 ‘여행자’는 계약해제를 할 수 있으며, 제 16조 제 1항의 손해배상액의 50%를 감경합니다.</li>
+					(단, 세계보건기구(WHO)가 감염병 경보 5단계를 선언한 경우는 감염병이 발생한 해당지역에 한함)
+				</ol>
+			</section>
+    	</div>
+	</div>
+
+    <!-- Sidebar -->
+	<div id="sidebar">
+		<div class="inner">
+			<? include "../nav.html"; ?>
+			<? include "../include/etc/input.html"; ?>
+			<? include "../footer.html"; ?>
+		</div>
+	</div>
+</div>
+
+<? include "../script.html"; ?>
+
+</body>
+</html>

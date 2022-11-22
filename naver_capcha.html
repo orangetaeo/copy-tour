@@ -1,0 +1,65 @@
+<?
+  // 네이버 캡차 Open API 예제 - 키 발급
+  $client_id = "xzmAn0nl1RJYQ3phCK7n" ;
+  $client_secret = "PPWFPlPs4A" ;
+  $code = "0";
+  $url = "https://openapi.naver.com/v1/captcha/nkey?code=".$code;
+  $is_post = false;
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, $url);
+  curl_setopt($ch, CURLOPT_POST, $is_post);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  $headers = array();
+  $headers[] = "X-Naver-Client-Id: ".$client_id;
+  $headers[] = "X-Naver-Client-Secret: ".$client_secret;
+  curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+  $response = curl_exec ($ch);
+  $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+  // echo "status_code:".$status_code."<br>";
+  curl_close ($ch);
+  if($status_code == 200) {
+	// echo $response;
+  } else {
+	echo "Error 내용:".$response;
+  }
+
+$response = json_decode($response);
+
+
+
+  $key = $response->key ;
+  $url = "https://openapi.naver.com/v1/captcha/ncaptcha.bin?key=".$key;
+  $is_post = false;
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, $url);
+  curl_setopt($ch, CURLOPT_POST, $is_post);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  $headers = array();
+  $headers[] = "X-Naver-Client-Id: ".$client_id;
+  $headers[] = "X-Naver-Client-Secret: ".$client_secret;
+  curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+  $response = curl_exec ($ch);
+  $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+  // echo "status_code:".$status_code."<br>";
+  curl_close ($ch);
+  if($status_code == 200) {
+	//echo $response;
+	$fp = fopen("captcha.jpg", "w+");
+	fwrite($fp, $response);
+	fclose($fp);
+	echo "<img src='captcha.jpg'>" ;
+  } else {
+	echo "Error 내용:".$response;
+  }
+?>
+
+<!doctype html> 
+<html lang="ko"> 
+<head> 
+<meta charset="utf-8"> 
+<meta name="robots" content="noindex,nofollow" />
+</head>
+
+<script>
+	parent.form01.key.value = "<?=$key?>" ;
+</script>

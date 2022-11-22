@@ -1,0 +1,14 @@
+/* footer */
+.sns {z-index:88; position:fixed; right:20px; bottom:75px;}
+.sns ul li {overflow:hidden; width:50px; height:50px; margin-bottom:5px; border:1px solid rgba(0,0,0,.1); border-radius:50%; cursor:pointer;}
+
+footer {width:100%; padding:15px 0 25px; border-top:1px solid #dbdfda; background:#fff;}
+footer .foot_inn {width:1200px; margin:0 auto; font-size:13px; text-align:center;}
+footer .foot_inn .copyright {margin-top:10px;}
+footer .foot_inn .copyright p {line-height:20px; color:#999;}
+footer .foot_inn .copyright p .poi {font-weight:700;}
+
+#top {z-index:88; position:fixed; right:20px; bottom:20px;}
+#top p {width:50px; height:50px; font-size:13px; text-align:center; border:1px solid #dbdfda; border-radius:50%; background:#fff; cursor:pointer;}
+#top p i {margin-top:8px;}
+#top p:hover {border-color:#777;}

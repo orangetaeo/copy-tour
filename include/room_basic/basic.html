@@ -1,0 +1,47 @@
+							<section>
+								<header class="major">
+									<h2>숙소 기본정보</h2>
+								</header>
+								<div class="table-wrapper">
+									<table>
+										<tbody>
+											<tr>
+												<td>총 객실수</td>
+												<td>
+                                                    <? if ( $WNW[D_product_hotel] > 0 ) echo("호텔"); ?>
+                                                    <? if ( $WNW[D_product_residence] > 0 ) echo(", 레지던스"); ?>
+                                                    <? if ( $WNW[D_product_vila] > 0 ) echo(", 빌라"); ?>
+                                                </td>
+                                                <td><?=number_format($WNW[D_product_hotel]+$WNW[D_product_residence]+$WNW[D_product_villa])?>개</td>
+											</tr>
+											<tr>
+												<td>시내에서 거리</td>
+												<td>차량</td>
+                                                <td><?=$WNW[D_distance_city]?></td>
+											</tr>
+											<tr>
+												<td>공항에서 거리</td>
+												<td>차량</td>
+                                                <td><?=$WNW[D_distance_airport]?></td>
+											</tr>
+											<tr>
+												<td>체크인</td>
+                                                <td><?=substr($WNW[D_checkin],0,2)?>:<?=substr($WNW[D_checkin],2,2)?></td>
+												<td>얼리체크인 가능</td>
+											</tr>
+											<tr>
+												<td>체크아웃</td>
+                                                <td><?=substr($WNW[D_checkout],0,2)?>:<?=substr($WNW[D_checkout],2,2)?></td>
+												<td>레이트 체크아웃 가능</td>
+											</tr>
+                                            <? if ( $R[D_shuttle_ok] == "Y" ) { ?>
+											<tr>
+												<td>셔틀운영</td>
+												<td>항공편명 시간에 맞추어 운영</td>
+												<td>운영</td>
+											</tr>
+                                            <? } ?>
+										</tbody>
+									</table>
+								</div>
+							</section>

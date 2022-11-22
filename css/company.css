@@ -1,0 +1,13 @@
+/* 회사소개 */
+.introduce .con {width:800px; margin:0 auto; padding:80px 0;}
+.introduce .con ul {text-align:center;}
+.introduce .con ul li {display:inline-block; width:140px; height:140px; margin:0 10px; border-radius:50%;}
+.introduce .con ul li:nth-child(1) {background:#dfdadc;}
+.introduce .con ul li:nth-child(2) {background:#dbdfda;}
+.introduce .con ul li:nth-child(3) {background:#dadcdf;}
+.introduce .con ul li img {margin-top:20px;}
+.introduce .con .txt .p1 {margin-top:50px; font-size:27px;}
+.introduce .con .txt .p2 {margin-top:30px; font-size:17px; color:#437200;}
+.introduce .con .txt .p3 {margin-top:30px; line-height:30px; text-align:justify;}
+.introduce .con .map {width:800px; height:500px; margin:50px auto 0;}
+.introduce .con .map #map-canvas {width:100%; height:100%;}

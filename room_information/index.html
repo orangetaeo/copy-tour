@@ -1,0 +1,125 @@
+<?
+include("../config.php3");
+
+$q = " select * from ITEM where number='$I_number' " ;
+$r = mysqli_query($mysql_con,$q);
+$R = mysqli_fetch_array($r);
+
+$I_balcony = "없음" ;
+if ( $R[I_balcony] == "Y" ) $I_balcony = "있음" ;
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>인터콘티넨탈 푸꾸옥 롱 비치 리조트 클레식룸</title>
+<!-- meta tag-->
+<? include "../head_common.html"; ?>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+	<div id="main">
+		<div class="inner">
+
+			<!-- Header -->
+			<header id="header">
+                <a href="/" class="logo"><strong><?=$WNW[D_name_kr]?></strong> <?=$R[I_name_kr]?></a>
+				<!-- Header icon -->
+				<? include "../include/header/icons.html"; ?>
+			</header>
+
+			<!-- Content -->
+			<section>
+				<header class="main">
+                    <h1><?=$R[I_name_kr]?></h1>
+				</header>
+				<span class="image main"><img src="/images/homepage/ac/vietnam/phuquoc/room_information/classic/main.jpg" alt="인터콘티넨탈 푸꾸옥 롱 비치 리조트 클레식룸" /></span>
+                <p><?=nl2br($R[I_text])?></p>
+				<ul class="actions">
+                    <li><a href="/reservation/?I_number=<?=$R[number]?>" class="button">바로 예약하기</a></li>
+                    <li><button type="button" class="button" onclick="">이미지 갤러리</button></li>
+                </ul>  
+			</section>
+
+			<!-- Section -->
+			<section>
+				<header class="major">
+                    <h2><?=$R[I_name_kr]?> 기본정보</h2>
+				</header>
+				<div class="table-wrapper">
+					<table>
+						<tbody>
+							<tr>
+								<td>객실명</td>
+                                <td><?=$R[I_name_kr]?> <?=$R[I_name]?></td>
+                            </tr>
+							<tr>
+								<td>투숙인원</td>
+                                <td>성인 <?=$R[I_capacityA_adult]?> 소아 <?=$R[I_capacityA_child]?></td>
+                            </tr>
+                            <tr>
+                                <td>발코니</td>
+                                <td><?=$I_balcony?></td>
+                            </tr>
+                            <tr>
+                                <td>뷰</td>
+                                <td><?=$R[I_view]?></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a href="/reservation/?I_number=<?=$R[number]?>" class="button">바로 예약하기</a>
+            </section>
+
+			<!-- Section -->
+			<section>
+				<header class="major">
+					<h2>다른 객실 정보</h2>
+				</header>
+				<div class="posts">
+                    <?
+                    $where = " where D_code='$D_code' " ;
+                    $where.= " AND I_ok='Y' " ;
+                    $where.= " AND number != '$I_number' " ;
+                    $qstring = "select * from ITEM $where order by I_seq " ;
+                    $result = mysqli_query($mysql_con,$qstring);
+                    $rows = mysqli_num_rows($result);
+                        
+                    for ( $i = 0 ; $i < $rows ; $i ++ ) {
+                    $R = mysqli_fetch_array($result);
+                    $link = "/room_information/?I_number=$R[number]" ;
+                    ?>
+					<article>
+                        <a href="<?=$link?>" class="image"><img src="<?=$image_url?>/images/rooms/<?=$R[I_image]?>" title="<?=$WNW[D_name_kr]?> <?=$WNW[D_name]?> <?=$R[I_name_kr]?>" /></a>
+                        <h3><?=$R[I_name_kr]?></h3>
+                        <p><?=nl2br($R[I_text])?></p>
+						<ul class="actions">
+                            <li><a href="<?=$link?>" class="button">More</a></li>
+                            <li><button type="button" class="button" onclick="">이미지 갤러리</button></li>
+						</ul>
+					</article>
+					<?
+                    }
+                    ?>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<!-- Sidebar -->
+	<div id="sidebar">
+		<div class="inner">
+			<? include "../nav.html"; ?>
+			<? include "../include/etc/input.html"; ?>
+            <? include "../footer.html"; ?>
+		</div>
+	</div>
+</div>
+
+<? include "../script.html"; ?>
+
+</body>
+</html>

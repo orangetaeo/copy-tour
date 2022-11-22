@@ -1,0 +1,72 @@
+<? include("../config.php3"); ?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<title><?=$WNW[D_name_kr]?> 연령기준</title>
+<!-- meta tag-->
+<? include "../head_common.html"; ?>	
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+	<!-- Main -->
+	<div id="main">
+		<div class="inner">
+
+			<!-- Header -->
+			<header id="header">
+                <a href="/" class="logo"><strong><?=$WNW[D_name_kr]?></strong> 연령기준</a>
+				<!-- Header icon -->
+				<? include "../include/header/icons.html"; ?>
+			</header>
+
+			<section>
+				<header class="main">
+					<h1>연령기준</h1>
+				</header>
+			<!-- 연령기준 Table -->
+				<div class="table-wrapper">
+					<table>
+						<thead>
+							<tr>
+								<th>구분</th>
+								<th>연령</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>성인</td>
+								<td>만 12세 이상</td>
+							</tr>
+							<tr>
+								<td>아동</td>
+								<td>만12세 ~  만 12세 미만</td>
+							</tr>
+							<tr>
+								<td>유아</td>
+								<td>만 2세 미만</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</div>
+	</div>
+
+<!-- Sidebar -->
+	<div id="sidebar">
+		<div class="inner">
+			<? include "../nav.html"; ?>
+			<? include "../include/etc/input.html"; ?>
+			<? include "../footer.html"; ?>
+		</div>
+	</div>
+</div>
+
+<!-- Scripts -->
+<? include "../script.html"; ?>
+
+</body>
+</html>

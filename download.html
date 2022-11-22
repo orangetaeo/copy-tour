@@ -1,0 +1,34 @@
+<?
+include("config.php3");
+
+$file = $_SERVER['DOCUMENT_ROOT']."/images/files/$filename" ;
+if ( $opt == "hotel" ) $file = $_SERVER['DOCUMENT_ROOT']."/images/hotel_images/$filename" ;
+$file_size = filesize($file);
+$name = urlencode($real_name);
+
+// 접근경로 확인
+// if ( !($_SERVER['HTTP_HOST'] || !$_SERVER['HTTP_REFERER'])) Error("외부에서는 다운로드 받으실수 없습니다.");
+
+if(strstr($HTTP_USER_AGENT, "MSIE 5.5")) {
+header("Content-Type: doesn/matter");
+Header("Content-Length: ".filesize("$file"));
+header("Content-Disposition: filename=$name");
+header("Content-Transfer-Encoding: binary");
+header("Pragma: no-cache");
+header("Expires: 0");
+} else {
+Header("Content-type: file/unknown");
+Header("Content-Disposition: attachment; filename=$name");
+Header("Content-Transfer-Encoding: binary");
+Header("Content-Length: ".filesize($file));
+Header("Content-Description: PHP3 Generated Data");
+header("Pragma: no-cache");
+header("Expires: 0");
+}
+
+if (is_file("$file")) {
+$fp = fopen("$file", "r");
+if (!fpassthru($fp))
+fclose($fp);
+}
+?>

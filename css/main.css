@@ -1,0 +1,100 @@
+/* main */
+#container {padding:180px 0 0; background:#fff; box-sizing:border-box;}
+
+/* 메인비쥬얼 */
+.main_visual {position:relative; width:100%; height:650px; margin-bottom:60px;}
+.main_visual .mai_slide {position:absolute; left:50%; top:0; transform:translateX(-50%); width:2000px;}
+.main_visual .mai_slide .li {position:relative;}
+.main_visual .mai_slide .word {position:absolute; left:0; top:190px; width:100%; text-align:center; color:#281c19;}
+.main_visual .mai_slide .word .tit {margin-bottom:10px; font-size:22px; letter-spacing:10px;}
+.main_visual .mai_slide .word .txt {font-size:54px;}
+.main_visual .slide_nav {/*z-index:1;*/ overflow:hidden; position:absolute; left:50%; bottom:-47px; width:915px; height:95px; margin-left:-457.5px; background:#fff; box-shadow:0px -1px 20px 0px rgba(0,0,0,0.15);}
+.main_visual .slide_nav .slick-arrow {/*z-index:1;*/ position:absolute; top:50%; width:60px; height:95px; text-indent:-9999px; border:0; border-radius:0; background:#fff url(/images/ic_arrow_02.jpg) no-repeat;}
+.main_visual .slide_nav .slick-arrow.slick-prev {left:0; background-position:0 0;}
+.main_visual .slide_nav .slick-arrow.slick-next {right:0; background-position:100% 0;}
+.main_visual .slide_nav .slick-list {width:795px; margin:0 auto;}
+.main_visual .slide_nav .slick-list li {overflow:hidden; width:265px; height:94px; padding:0 15px; text-overflow:ellipsis; font-size:17px; line-height:95px; font-weight:500; text-align:center; white-space:nowrap;}
+.main_visual .slide_nav .slick-list li.slick-current {color:#e44600; border-bottom:1px solid #e44600;}
+
+/* 차량소개 */
+.main_cars {width:100%; padding:80px 0 100px; text-align:center; box-sizing:border-box;}
+.main_cars h2 {font-size:27px; font-weight:500; line-height:1;}
+.main_cars h3 {margin-top:7px;}
+.main_cars ul {width:1400px; margin:30px auto 0;}
+.main_cars ul li {display:inline-block; width:330px; margin:0 6px; border:1px solid #dbdfda; background:#fff; cursor:pointer; transition:all .2s;}
+.main_cars ul li .img img {width:100%;}
+.main_cars ul li .tit {margin-top:10px; font-size:21px; transition:all .2s;}
+.main_cars ul li .txt {margin-top:20px; padding:0 25px; box-sizing:border-box; transition:all .2s;}
+.main_cars ul li .txt p {width:100%; margin-top:10px;}
+.main_cars ul li .txt .p3 span {line-height:28px;}
+.main_cars ul li .txt .p3 select {line-height:-1; border:0; background-color:#dbdfda;}
+.main_cars ul li .txt .p4 {font-size:18px;}
+.main_cars ul li .btn {padding:10px; box-sizing:border-box;}
+.main_cars ul li .btn button {width:100%; height:40px; margin-top:5px; font-weight:700; color:#fff; border-color:rgba(0,0,0,.1); background:#525850; transition:all .2s;}
+.main_cars ul li:hover {background:#666;}
+.main_cars ul li:hover .tit {color:#fff;}
+.main_cars ul li:hover .txt {color:#fff;}
+.main_cars ul li:hover .txt .p3 select {line-height:-1; border:0; background-color:#f2f2f2;}
+.main_cars ul li:hover .btn button {background:#ff7e00;}
+
+.main_cars ul .slick-dots {position:absolute; bottom:-68px; left:50%; transform:translateX(-50%); width:400px; height:40px; text-align:center;}
+.main_cars ul .slick-dots li {display:inline-block; width:10px; height:10px; margin:0 12px; border:0; background:none;}
+.main_cars ul .slick-dots li button {width:10px; height:10px; padding:0; text-indent:-99999px; border:0; border-radius:50%; background:rgba(82,87,80,.5); outline:none;}
+.main_cars ul .slick-dots li.slick-active button {background:rgba(82,87,80,1);}
+
+/* 이벤트 */
+.main_event {width:100%; padding:80px 0; text-align:center; background:url(/images/mai_bg_event.png) no-repeat 50% 50% fixed; box-sizing:border-box;}
+.main_event h2 {font-size:27px; font-weight:500; line-height:1; color:#fff;}
+.main_event h3 {margin-top:7px; color:#fff;}
+.main_event ul {width:1400px; margin:30px auto 0;}
+.main_event ul li {position:relative; display:inline-block; width:520px; height:280px; margin:0 6px; background:#eaeaea;}
+.main_event ul li .img img {width:100%;}
+.main_event ul li a {position:absolute; left:0; top:0; display:block; width:100%; height:100%; padding:35px; text-align:left; box-sizing:border-box;}
+.main_event ul li a .tit {font-size:35px;}
+.main_event ul li a .txt {margin-top:10px;}
+.main_event ul li a .btn {margin-top:20px;}
+.main_event ul li a .btn button {width:125px; height:30px; font-weight:700; color:#fff; border-color:rgba(0,0,0,.1); background:#525850; transition:all .2s;}
+.main_event ul li a:hover .btn button {background:#193110;}
+
+/* 안내 */
+.main_info {width:100%; padding:80px 0 0; text-align:center; background:#fff; box-sizing:border-box;}
+.main_info .inn {width:1400px; margin:0 auto;}
+.main_info .inn .cs {display:inline-block; width:400px; height:235px; margin:0 7px; padding:10px; border:1px solid rgba(0,0,0,.05); box-sizing:border-box;}
+.main_info .inn .cs_center {background:#b0e4d4;}
+.main_info .inn .cs_money {background:#eae6a6;}
+.main_info .inn .cs_youtube {background:#eacaef;}
+.main_info .inn .cs h2 {margin-top:30px; font-size:27px; font-weight:500; line-height:1;}
+.main_info .inn .cs .box p {font-size:29px; line-height:36px;}
+.main_info .inn .cs .box p span {display:inline-block; width:40px; height:40px; margin-right:5px; border-radius:50%; background:rgba(255,255,255,.7);}
+.main_info .inn .cs .box p span i {margin:4px 0 0 0; font-size:29px;}
+.main_info .inn .cs .box .call {margin-top:20px;}
+.main_info .inn .cs .box .call span {background:#0d8581;}
+.main_info .inn .cs .box .call span i {color:#b0e4d4;}
+.main_info .inn .cs .box .mobile {margin-top:5px;}
+.main_info .inn .cs .box .mobile span {background:#0d5685;}
+.main_info .inn .cs .box .mobile span i {font-size:30px; color:#b0e4d4;}
+.main_info .inn .cs .box .bank_num {margin-top:20px;}
+.main_info .inn .cs .box .bank_num span {background:#822d8c;}
+.main_info .inn .cs .box .bank_num span i {margin:3px -1px 0 0; color:#eae6a6;}
+.main_info .inn .cs .box .bank {margin-top:10px; font-size:21px; line-height:1;}
+.main_info .inn .cs .box .per {margin-top:10px; font-size:21px; line-height:1;}
+.main_info .inn .cs .video {overflow:hidden; border-radius:5px;}
+
+/* 인스타그램 */
+.main_instagram {width:100%; padding:80px 0px 30px 0px ; text-align:center; box-sizing:border-box;}
+.main_instagram h2 {font-size:27px; font-weight:500; line-height:1;}
+.main_instagram h3 {margin-top:7px;}
+
+.index_guide .con {width:1249px; margin:0 auto; padding:0px 0px 80px 0px;}
+.index_guide .con .ul:after {content:""; display:block; clear:both;}
+.index_guide .con .ul li {float:left; width:233px; height:180px; margin:8px; background:#f1f5ef; border-bottom:1px solid #dbdfda}
+.index_guide .con .ul li a .img {overflow:hidden; display:inline-block; width:280px; height:280px; border:1px solid #dbdfda; box-sizing:border-box; cursor:pointer;}
+.index_guide .con .ul li a .img p {width:100%; height:100%; background:url(/images/instagram_01.png) no-repeat 50% 50%; background-size:contain; transition:all .2s;}
+.index_guide .con .ul li a:hover .img p {transform:scale(1.1);}
+.index_guide .con .ul li a .box {padding:10px; text-align:center; box-sizing:border-box;}
+.index_guide .con .ul li a .box .tit {overflow:hidden; max-width:100%; margin:5px 0; font-weight:700; text-overflow:ellipsis; white-space:pre;}
+.index_guide .con .ul li a .box .per {margin-top:10px; font-size:13px; color:#888;}
+.index_guide .con .ul li a .box .per span {margin-left:7px;}
+.index_guide .con .done {margin-top:30px; text-align:center;}
+.index_guide .con .done button {width:310px; height:40px; font-weight:700; color:#fff; border-color:rgba(0,0,0,.1); background:#525850; transition:all .2s;}
+.index_guide .con .done button:hover {background:#193110;}

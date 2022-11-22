@@ -1,0 +1,14 @@
+                                                <?
+                                                $where = " where D_code='$D_code' " ;
+                                                $where.= " AND I_ok='Y' " ;
+                                                $qstring = "select * from ITEM $where order by I_seq " ;
+                                                $result = mysqli_query($mysql_con,$qstring);
+                                                $rows = mysqli_num_rows($result);
+
+                                                for ( $i = 0 ; $i < $rows ; $i ++ ) {
+                                                $R = mysqli_fetch_array($result);
+                                                ?>
+                                                <li><a href="/room_information/?I_number=<?=$R[I_number]?>"><?=$R[I_name_kr]?></a></li>
+                                                <?
+                                                }
+                                                ?>

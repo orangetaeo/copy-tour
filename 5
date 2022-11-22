@@ -1,0 +1,22 @@
+                        <?
+                        $where = " where D_code='$D_code' " ;
+                        $where.= " AND I_ok='Y' " ;
+                        $qstring = "select * from ITEM $where order by I_seq " ;
+                        $result = mysqli_query($mysql_con,$qstring);
+                        $rows = mysqli_num_rows($result);
+                        
+                        for ( $i = 0 ; $i < $rows ; $i ++ ) {
+                        $R = mysqli_fetch_array($result);
+                        $link = "/room_information/?I_number=$R[number]" ;
+                        ?>
+						<article>
+                            <a href="<?=$link?>" class="image"><img src="<?=$image_url?>/images/rooms/<?=$R[I_image]?>" title="<?=$WNW[D_name_kr]?> <?=$WNW[D_name]?> <?=$R[I_name_kr]?>" /></a>
+                            <h3><?=$R[I_name_kr]?></h3>
+                            <p><?=nl2br($R[I_text])?></p>
+							<ul class="actions">
+                                <li><a href="<?=$link?>" class="button">More</a></li>
+							</ul>
+						</article>
+						<?
+                        }
+                        ?>

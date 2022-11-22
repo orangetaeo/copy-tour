@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* reset.css */
+html, body {width:100%;height:100%;}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,input,select,option,textarea,button,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:top; -webkit-text-size-adjust:100%;}
+table, caption, tbody, tfoot, thead, tr, th, td, img, input, button, select, label, fieldset {vertical-align:middle;}
+table {width:100%; border-collapse:collapse; border-spacing:0;}
+button {cursor:pointer;}
+img, fieldset {border:0;}
+ul, ol, li {list-style:none;}
+address, caption, cite, code, em, strong, th {font-style:normal;font-weight:normal;}
+header, hgroup, footer, section, article, nav, canvas, figure, figcaption {display:block;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+blockquote, q {quotes:none;}
+q:after, q:before {content:"";}
+.cf:after {content:""; display:block; clear:both;}
+caption, th {text-align:left;}
+abbr, acronym {border:none;}
+hr {display:none;}
+#skipNavi, .blind {position:absolute;left:0;top:0;width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;overflow:hidden;visibility:hidden;}
+
+/* common */
+body {width:100%; background:#fff; *word-break:break-all;-ms-word-break:break-all; overflow-x: hidden; }
+body {font-family:'Noto Sans KR', 'Nanum Gothic', '나눔 고딕', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', '굴림', 'Gulim', Arial, Helvetica, Sans-serif; font-size:15px; color:#333; letter-spacing:-0.1px;}
+a {font-family:'Noto Sans KR', 'Nanum Gothic', '나눔 고딕', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', '굴림', 'Gulim', Arial, Helvetica, Sans-serif; font-size:15px; color:#333; letter-spacing:-0.1px; text-decoration:none; outline:0;}
+input,select,option,label,textarea,button {font-family:'Noto Sans KR', 'Nanum Gothic', '나눔 고딕', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', '굴림', 'Gulim', Arial, Helvetica, Sans-serif; font-size:15px; color:#333; letter-spacing:-0.1px;}
+a {cursor:pointer;}
+
+/* native hide */
+.hide {-webkit-appearance:none; -moz-appearance:none; appearance:none;}
+.hide::-ms-expand {display:none;}
+
+/* 아이폰 그림자없애기 */
+input {-webkit-appearance:none; -webkit-border-radius:0;}

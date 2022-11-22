@@ -1,0 +1,135 @@
+/* 예약하기 */
+.item_write {width:100%; padding:0 0 140px;}
+.item_write .con {width:1100px; margin:0 auto;}
+.item_write .con .cart_t table {margin-bottom:30px;}
+.item_write .con .cart_t table tbody tr {border-bottom:1px solid #ccc;}
+.item_write .con .cart_t table tbody:first-child tr:first-child {border-top:2px solid #9db6ed;}
+.item_write .con .cart_t table tbody tr td {padding:5px 10px; font-size:15px; line-height:28px; background:#fff; box-sizing:border-box;}
+.item_write .con .cart_t table tbody tr .td_img {width:150px; text-align:center;}
+.item_write .con .cart_t table tbody tr .td_img p {width:100px; height:100px; margin:0 auto; border:1px solid #ccc; box-sizing:border-box;}
+.item_write .con .cart_t table tbody tr .td_img p img {width:100%;}
+.item_write .con .cart_t table tbody tr .td_tit {font-size:18px;}
+.item_write .con .item_t table {margin-bottom:30px;}
+.item_write .con .item_t table tbody tr {border-bottom:1px solid #ccc;}
+.item_write .con .item_t table tbody tr:first-child {border-top:2px solid #9db6ed;}
+.item_write .con .item_t table tbody tr th {width:150px; height:40px; font-size:15px; text-align:center; color:#999; background:#fcfcfc;}
+.item_write .con .item_t table tbody tr td {padding:5px 10px; font-size:15px; line-height:28px; background:#fff; box-sizing:border-box;}
+.item_write .con .item_t table tbody tr .td_w {width:400px;}
+.item_write .con .item_t table tbody tr td input {height:30px; font-size:15px;}
+.item_write .con .item_t table tbody tr td .w100 {width:100%;}
+.item_write .con .item_t table tbody tr td .wA {width:200px;}
+.item_write .con .item_t table tbody tr td .wB {width:130px;}
+.item_write .con .item_t table tbody tr td .txt {padding:10px 0; line-height:25px;}
+.item_write .con .item_t table tbody tr td .fl {float:left;}
+.item_write .con .item_t table tbody tr td ul:after {content:""; display:block; clear:both;}
+.item_write .con .item_t table tbody tr td ul li {float:left; margin-right:10px; font-size:15px;}
+.item_write .con .item_t table tbody tr td ul li select {height:30px; font-size:15px; border:1px solid #ccc;}
+.item_write .con .item_t table tbody tr td ul li option {font-size:15px;}
+.item_write .con .item_t table tbody tr td ul li input {height:30px; font-size:15px; border:1px solid #ccc;}
+.item_write .con .item_t table tbody tr td ul .li_depart select {width:219px;}
+.item_write .con .item_t table tbody tr td ul .li_day input {width:95px;}
+.item_write .con .item_t table tbody tr td ul .li_day i {margin-left:3px; font-size:25px; line-height:30px; color:#9db6ed; cursor:pointer;}
+.item_write .con .item_t table tbody tr td ul .li_time select {width:95px;}
+.item_write .con .item_t table tbody tr td ul li .cal {margin:0 10px 0 5px; line-height:30px;}
+.item_write .con .item_t table tbody tr td ul .li_total {margin-left:10px; font-size:18px; line-height:30px; color:#b51000;}
+.item_write .con .item_t table tbody tr td ul .li_part {line-height:30px;}
+
+/* c_box */
+.item_write .con .item_t .c_box {margin-left:10px;}
+.item_write .con .item_t .c_box label {position:relative; top:-1px; display:inline-block; padding-left:23px; font-size:15px; line-height:20px; cursor:pointer;}
+.item_write .con .item_t .c_box label input {opacity:0; position:absolute; left:4px; top:5px;}
+.item_write .con .item_t .c_box label span {position:absolute; left:0; top:1px; display:block; width:20px; height:20px; background:url(/images/ic_input_box.png) no-repeat 0 0;}
+.item_write .con .item_t .c_box label input:checked + span {background:url(/images/ic_input_box.png) no-repeat 100% 0;}
+
+/* r_circle */
+.item_write .con .item_t .r_circle label {position:relative; top:-1px; display:inline-block; margin-right:10px; padding-left:23px; font-size:15px; *line-height:30px; cursor:pointer;}
+.item_write .con .item_t .r_circle label input {opacity:0; position:absolute; left:4px; top:0;}
+.item_write .con .item_t .r_circle label span {position:absolute; left:0; top:5px; display:block; width:20px; height:20px; background:url(/images/ic_input_box.png) no-repeat 0 100%;}
+.item_write .con .item_t .r_circle label input:checked + span {background:url(/images/ic_input_box.png) no-repeat 100% 100%;}
+.item_write .con .item_t .r_circle label input:focus + span {background:url(/images/ic_input_box.png) no-repeat 100% 100%;}
+
+/* c_box */
+.item_write .agree {margin-top:30px; text-align:center;}
+.item_write .agree .c_box label {position:relative; top:-1px; display:inline-block; padding-left:23px; font-size:15px; line-height:20px; cursor:pointer;}
+.item_write .agree .c_box label input {opacity:0; position:absolute; left:4px; top:5px;}
+.item_write .agree .c_box label span {position:absolute; left:0; top:1px; display:block; width:20px; height:20px; background:url(/images/ic_input_box.png) no-repeat 0 0;}
+.item_write .agree .c_box label input:checked + span {background:url(/images/ic_input_box.png) no-repeat 100% 0;}
+.item_write .agree .c_box .btn {display:inline-block; margin-left:5px; font-size:15px; line-height:18px; color:#2e5295; cursor:pointer;}
+.item_write .agree .c_box .btn:hover {text-decoration:underline;}
+
+/* 예약확인 */
+.item_view {width:100%; padding:0 0 140px;}
+.item_view .con {width:1100px; margin:0 auto;}
+.item_view .con .cart_t table {margin-bottom:30px;}
+.item_view .con .cart_t table tbody tr {border-bottom:1px solid #ccc;}
+.item_view .con .cart_t table tbody:first-child tr:first-child {border-top:2px solid #9db6ed;}
+.item_view .con .cart_t table tbody tr td {padding:5px 10px; font-size:15px; line-height:28px; background:#fff; box-sizing:border-box;}
+.item_view .con .cart_t table tbody tr .td_img {width:150px; text-align:center;}
+.item_view .con .cart_t table tbody tr .td_img p {width:100px; height:100px; margin:0 auto; border:1px solid #ccc; box-sizing:border-box;}
+.item_view .con .cart_t table tbody tr .td_img p img {width:100%;}
+.item_view .con .cart_t table tbody tr .td_tit {font-size:18px;}
+.item_view .con .view_t table {margin-bottom:30px;}
+.item_view .con .view_t table tbody tr {border-bottom:1px solid #ccc;}
+.item_view .con .view_t table tbody tr:first-child {border-top:2px solid #9db6ed;}
+.item_view .con .view_t table tbody tr th {width:150px; height:40px; font-size:15px; text-align:center; color:#999; background:#fcfcfc;}
+.item_view .con .view_t table tbody tr td {padding:5px 10px; font-size:15px; line-height:28px; background:#fff; box-sizing:border-box;}
+.item_view .con .view_t table tbody tr .td_w {width:400px;}
+.item_view .con .view_t table tbody tr td .poi {font-size:18px; color:#b51000;}
+
+/* 장바구니 */
+.item_cart {width:100%; padding:0 0 140px;}
+.item_cart .con {width:1100px; margin:0 auto;}
+.item_cart .con .cart_t table {margin-bottom:30px;}
+.item_cart .con .cart_t table tbody tr {border-bottom:1px solid #ccc;}
+.item_cart .con .cart_t table tbody:first-child tr:first-child {border-top:2px solid #9db6ed;}
+.item_cart .con .cart_t table tbody tr td {padding:5px 10px; font-size:15px; line-height:28px; background:#fff; box-sizing:border-box;}
+.item_cart .con .cart_t table tbody tr .td_ch {width:60px; text-align:center;}
+.item_cart .con .cart_t table tbody tr .td_img {width:130px; text-align:center;}
+.item_cart .con .cart_t table tbody tr .td_img p {width:100px; height:100px; border:1px solid #ccc; box-sizing:border-box;}
+.item_cart .con .cart_t table tbody tr .td_img p img {width:100%;}
+.item_cart .con .cart_t table tbody tr .td_tit {font-size:18px;}
+.item_cart .con .cart_t table tbody tr .td_btn {width:130px; text-align:center;}
+.item_cart .con .cart_t table tbody tr .td_btn p button {width:100px; height:30px; background:#eef0f4; transition:all 0.2s;}
+.item_cart .con .cart_t table tbody tr .td_btn p button:hover {color:#b51000;}
+.item_cart .con .cart_t table tbody tr .td_total {font-size:18px; line-height:28px; color:#b51000;}
+
+/* 시설안내 */
+.item_list {width:100%; padding:0 0 140px;}
+.item_list .item_list_inn {width:1100px; margin:0 auto;}
+.item_list .item_list_inn #filters {margin-bottom:50px; text-align:center;}
+.item_list .item_list_inn #filters a {display:inline-block; height:40px; padding:0 30px; font-size:15px; line-height:38px; border:1px solid rgba(0,0,0,0.1); border-radius:3px; background:#eef0f4; box-sizing:border-box; transition:all 0.2s;}
+.item_list .item_list_inn #filters a:hover {border:1px solid #006bb5;}
+.item_list .item_list_inn #filters a.active {color:#fff; background:#006bb5;}
+.item_list .item_list_inn #filters a.active span i {color:#fff;}
+.item_list .item_list_inn #filters a span i {font-size:20px; line-height:38px;}
+.item_list .item_list_inn #filters a .dong1 i {color:#fcba30;}
+.item_list .item_list_inn #filters a .dong2 i {color:#006bb5;}
+.item_list .item_list_inn #filters a .dong3 i {color:#8b0d0d;}
+.item_list .item_list_inn #filters a .dong4 i {color:#6b7075;}
+
+.item_list .item_list_inn .sort_wrap {position:relative; overflow:hidden; max-width:1100px; margin:0 auto 30px;}
+.item_list .item_list_inn .sort_wrap #sortlist {position:relative; margin:0 auto; transition:all 0.4s ease-out; -webkit-transition:all 0.4s ease-out; -moz-transition:all 0.4s ease-out;}
+.item_list .item_list_inn .sort_wrap #sortlist li {position:absolute; width:352px; padding:0 10px 10px 0; transition: all 0.4s ease-out; -webkit-transition: all 0.4s ease-out; -moz-transition: all 0.4s ease-out; box-sizing:border-box;}
+.item_list .item_list_inn .sort_wrap #sortlist li .abox {width:100%; padding:10px; border:1px solid #d6d8db; box-sizing:border-box; transition:all 0.2s; cursor:pointer;}
+.item_list .item_list_inn .sort_wrap #sortlist li .abox .img {overflow:hidden; width:100%; height:300px; background:#eee;}
+.item_list .item_list_inn .sort_wrap #sortlist li .abox .txt {margin-top:7px; font-size:20px;}
+.item_list .item_list_inn .sort_wrap #sortlist li .abox .txt span i {margin-right:3px; font-size:22px; line-height:30px;}
+.item_list .item_list_inn .sort_wrap #sortlist li .abox .txt .dong1 i {color:#fcba30;}
+.item_list .item_list_inn .sort_wrap #sortlist li .abox .txt .dong2 i {color:#006bb5;}
+.item_list .item_list_inn .sort_wrap #sortlist li .abox .txt .dong3 i {color:#8b0d0d;}
+.item_list .item_list_inn .sort_wrap #sortlist li .abox .txt .dong4 i {color:#6b7075;}
+.item_list .item_list_inn .sort_wrap #sortlist li .abox:hover {border:1px solid #006bb5; box-shadow:2px 2px 12px rgba(0,0,0,0.1);}
+
+/* 시설안내 팝업 */
+.item_popup {display:none; position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.7);}
+.item_popup.on {display:block;}
+.item_popup .item_popup_inn {position:absolute; left:50%; top:50%; transform:translateX(-50%) translateY(-50%); width:670px; margin-top:90px; padding:10px; background:#fff; box-sizing:border-box;}
+.item_popup .item_popup_inn .box {display:none;}
+.item_popup .item_popup_inn .box.on {display:block;}
+.item_popup .item_popup_inn .box > div img {width:650px;}
+.item_popup .item_popup_inn .box > div .txt {font-size:25px; color:#333;}
+.item_popup .item_popup_inn .btn_close {position:absolute; top:-27px; right:-27px; cursor:pointer;}
+.item_popup .item_popup_inn .btn_close i {font-size:30px; color:#fff;}
+
+
+

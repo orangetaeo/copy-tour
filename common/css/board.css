@@ -1,0 +1,125 @@
+/* 페이지버튼 */
+.page_num ul {text-align:center;}
+.page_num ul li {display:inline-block; cursor:pointer;}
+.page_num ul li a {display:block;}
+.page_num ul .nmb a {width:21px; height:21px; line-height:19px; border:1px solid #ccc; border-radius:3px; transition:all 0.2s;}
+.page_num ul .nmb a:hover {color:#b51000;}
+.page_num ul .nmb a.on {color:#fff; border:1px solid rgba(0,0,0,0.1); background:#ccc;}
+.page_num ul .arr a {overflow:hidden; width:21px; height:21px; border-radius:3px;}
+.page_num ul .pprev a {background-image:url(/images/arrow_w_two.png); background-position:0 0;}
+.page_num ul .prev a {margin-right:8px; background-image:url(/images/arrow_w_one.png); background-position:0 0;}
+.page_num ul .next a {margin-left:8px; background-image:url(/images/arrow_w_one.png); background-position:100% 0;}
+.page_num ul .nnext a {background-image:url(/images/arrow_w_two.png); background-position:100% 0;}
+
+/* 완료버튼 */
+.done {margin-top:30px; text-align:center;}
+.done p {display:inline-block; margin:0 1px;}
+.done p button {width:220px; height:50px; font-size:18px; line-height:16px; border:0; background:#eef0f4; transition:all 0.2s;}
+.done .poi button {color:#fff; background:#006bb5;}
+
+/* 서브타이틀 */
+.sub_title {width:100%; padding:170px 0 70px;}
+.sub_title .sub_title_inn {width:1100px; margin:0 auto;}
+.sub_title .sub_title_inn h3 {*margin-bottom:30px; font-size:30px; line-height:30px; text-align:center;}
+.sub_title .sub_title_inn .txt {font-size:15px; line-height:25px; text-align:center; color:#666;}
+.sub_title .sub_title_inn .mt30 {margin-top:30px;}
+
+/* 서브타이틀2 */
+.sub_title2 {width:100%; padding:170px 0 0;}
+.sub_title2 .sub_title2_inn {width:1100px; margin:0 auto;}
+.sub_title2 .sub_title2_inn h3 {*margin-bottom:30px; font-size:30px; line-height:30px; text-align:center;}
+
+/* 문의리스트 */
+.qna_list {width:100%; padding:0 0 140px;}
+.qna_list .con {width:1100px; margin:0 auto;}
+
+/* 검색 */
+.qna_list .con .con_top:after {content:""; display:block; clear:both;}
+.qna_list .con .con_top .search {float:left;}
+.qna_list .con .con_top .search:after {content:""; display:block; clear:both;}
+.qna_list .con .con_top .search li {float:left;}
+.qna_list .con .con_top .search li select {width:110px; height:40px; margin-right:5px; font-size:15px; border:1px solid #ccc;}
+.qna_list .con .con_top .search li option {font-size:15px;}
+.qna_list .con .con_top .search li input {width:330px; height:40px; font-size:15px; border:1px solid #ccc; border-right:0; border-radius:3px 0 0 3px;}
+.qna_list .con .con_top .search li button {width:60px; height:40px; font-size:15px; color:#fff; border:1px solid #ccc; border-left:0; border-radius:0 3px 3px 0; background:#ccc;}
+.qna_list .con .con_top .search li button i {font-size:20px; line-height:30px; color:#fff;}
+.qna_list .con .con_top .seemore {float:right;}
+.qna_list .con .con_top .seemore select {width:120px; height:40px; font-size:15px; border:1px solid #ccc;}
+.qna_list .con .con_top .seemore option {font-size:15px;}
+
+/* 리스트 */
+.qna_list .con .list_t {margin:20px 0;}
+.qna_list .con .list_t table thead tr {border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
+.qna_list .con .list_t table thead tr th {height:40px; font-size:15px; text-align:center; color:#999; background:#fff;}
+.qna_list .con .list_t table tbody tr {border-bottom:1px solid #d9d9df;}
+.qna_list .con .list_t table tbody tr td {height:40px; font-size:15px; text-align:center; white-space:nowrap; background:#fff;}
+.qna_list .con .list_t table tbody tr .td_num {width:110px;}
+.qna_list .con .list_t table tbody tr .td_tit:after {content:""; display:block; clear:both;}
+.qna_list .con .list_t table tbody tr .td_tit .tit {float:left; text-align:left;}
+.qna_list .con .list_t table tbody tr .td_tit .tit a {display:inline-block; overflow:hidden; max-width:600px; padding:4px 0 0 0; font-size:15px; text-align:left; text-overflow:ellipsis; white-space:nowrap;}
+.qna_list .con .list_t table tbody tr .td_tit .tit a:hover {color:#b51000;}
+.qna_list .con .list_t table tbody tr .td_tit .tit span {display:inline-block;}
+.qna_list .con .list_t table tbody tr .td_tit .tit .new {width:27px; height:15px; margin:8px 3px 0 0; background:url(/images/ic_new.png) no-repeat 0 0;}
+.qna_list .con .list_t table tbody tr .td_tit .tit .key {width:16px; height:16px; margin:7px 0 0 3px; background:url(/images/ic_key.png) no-repeat 0 0;}
+.qna_list .con .list_t table tbody tr .td_tit .tit .moo {width:16px; height:16px; margin:7px 3px 0 0;}
+.qna_list .con .list_t table tbody tr .td_tit .tit .reply {width:25px; height:16px; margin:6px 3px 0 25px; background:url(/images/ic_reply.png) no-repeat 0 0;}
+.qna_list .con .list_t table tbody tr .td_name {width:150px;}
+.qna_list .con .list_t table tbody tr .td_day {width:120px;}
+
+/* 비밀번호확인 */
+.pw_check {display:none; z-index:111; position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5);}
+.pw_check.on {display:block;}
+.pw_check .pw_check_inn {position:relative; width:700px; margin:300px auto 0; padding:50px 60px; background:#fff; box-shadow:3px 3px 15px rgba(0,0,0,0.2); box-sizing:border-box;}
+.pw_check .pw_check_inn .txt {margin-bottom:20px; font-size:15px; line-height:25px; text-align:center;}
+.pw_check .pw_check_inn .inp input {width:100%; height:40px; font-size:15px; text-align:center; border:1px solid #ccc;}
+.pw_check .pw_check_inn .close {position:absolute; right:5px; top:5px;}
+.pw_check .pw_check_inn .close i {font-size:18px; color:#999; cursor:pointer;}
+
+/* 문의글쓰기 */
+.qna_write {width:100%; padding:0 0 140px;}
+.qna_write .con {width:1100px; margin:0 auto;}
+.qna_write .con .write_t table tbody tr {border-bottom:1px solid #ccc;}
+.qna_write .con .write_t table tbody tr:first-child {border-top:1px solid #ccc;}
+.qna_write .con .write_t table tbody tr th {width:150px; height:40px; font-size:15px; text-align:center; color:#999; background:#fcfcfc;}
+.qna_write .con .write_t table tbody tr td {padding:5px 10px; font-size:15px; line-height:28px; background:#fff; box-sizing:border-box;}
+.qna_write .con .write_t table tbody tr .td_w {width:400px;}
+.qna_write .con .write_t table tbody tr td input {height:30px; font-size:15px;}
+.qna_write .con .write_t table tbody tr td textarea {height:300px; font-size:15px; line-height:20px;}
+.qna_write .con .write_t table tbody tr td .w100 {width:100%;}
+.qna_write .con .write_t table tbody tr td .wA {width:200px;}
+
+/* input_file */
+.qna_write .input_file {position:relative; width:100%;}
+.qna_write .input_file .hidden {z-index:1; position:relative; overflow:hidden; width:100%; height:30px;}
+.qna_write .input_file .hidden .bgimg {position:absolute; left:0; top:0; width:50px; height:100%; overflow:hidden; border-radius:3px 0 0 3px; background:#ccc url(/images/ic_input_file.png) no-repeat 0 0; background-size:cover;}
+.qna_write .input_file .hidden input {opacity:0; width:100%; font-size:15px;}
+.qna_write .input_file .show {position:absolute; left:0; top:-1px; width:100%; height:30px; padding-left:50px; box-sizing:border-box;}
+.qna_write .input_file .show input {width:100%; height:100%; font-size:15px; color:#999; border:1px solid #ccc; border-radius:0 3px 3px 0; box-sizing:border-box;}
+
+/* r_circle */
+.qna_write .r_circle label {position:relative; top:-1px; display:inline-block; margin-right:25px; padding-left:23px; font-size:15px; *line-height:30px; cursor:pointer;}
+.qna_write .r_circle label input {opacity:0; position:absolute; left:4px; top:0;}
+.qna_write .r_circle label span {position:absolute; left:0; top:5px; display:block; width:20px; height:20px; background:url(/images/ic_input_box.png) no-repeat 0 100%;}
+.qna_write .r_circle label input:checked + span {background:url(/images/ic_input_box.png) no-repeat 100% 100%;}
+.qna_write .r_circle label input:focus + span {background:url(/images/ic_input_box.png) no-repeat 100% 100%;}
+
+/* c_box */
+.qna_write .agree {margin-top:30px; text-align:center;}
+.qna_write .agree .c_box label {position:relative; top:-1px; display:inline-block; padding-left:23px; font-size:15px; line-height:20px; cursor:pointer;}
+.qna_write .agree .c_box label input {opacity:0; position:absolute; left:4px; top:5px;}
+.qna_write .agree .c_box label span {position:absolute; left:0; top:1px; display:block; width:20px; height:20px; background:url(/images/ic_input_box.png) no-repeat 0 0;}
+.qna_write .agree .c_box label input:checked + span {background:url(/images/ic_input_box.png) no-repeat 100% 0;}
+.qna_write .agree .c_box .btn {display:inline-block; margin-left:5px; font-size:15px; line-height:18px; color:#2e5295; cursor:pointer;}
+.qna_write .agree .c_box .btn:hover {text-decoration:underline;}
+
+/* 문의글보기 */
+.qna_view {width:100%; padding:0 0 140px;}
+.qna_view .con {width:1100px; margin:0 auto;}
+.qna_view .con .view_t table tbody tr {border-bottom:1px solid #ccc;}
+.qna_view .con .view_t table tbody tr:first-child {border-top:1px solid #ccc;}
+.qna_view .con .view_t table tbody tr th {width:150px; height:40px; font-size:15px; text-align:center; color:#999; background:#fcfcfc;}
+.qna_view .con .view_t table tbody tr td {padding:5px 10px; font-size:15px; line-height:30px; background:#fff; box-sizing:border-box;}
+.qna_view .con .view_t table tbody tr .td_w {width:400px;}
+.qna_view .con .view_t table tbody tr td .txt {padding:5px 0 50px; line-height:25px;}
+.qna_view .con .view_t table tbody tr td .file {padding-left:30px; background:url(/images/ic_file.png) no-repeat 0 50%; box-sizing:border-box; cursor:pointer;}
+.qna_view .con .view_t table tbody tr td .file:hover {color:#2e5295; text-decoration:underline;}

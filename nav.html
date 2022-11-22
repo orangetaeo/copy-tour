@@ -1,0 +1,63 @@
+                                <section id="search" class="alt">
+                                    <form name="form_search" method="post" action="/search/">
+                                        <input type="text" name="search_keywd" id="query" value="<?=$search_keywd?>" placeholder="Search" />
+                                    </form>
+                                </section>
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="/">홈</a></li>
+										<li>
+											<span class="opener">객실정보</span>
+											<ul>
+                                                <?
+                                                $where = " where D_code='$D_code' " ;
+                                                $where.= " AND I_ok='Y' " ;
+                                                $qstring = "select * from ITEM $where order by I_seq " ;
+                                                $result = mysqli_query($mysql_con,$qstring);
+                                                $rows = mysqli_num_rows($result);
+
+                                                for ( $i = 0 ; $i < $rows ; $i ++ ) {
+                                                $R = mysqli_fetch_array($result);
+                                                ?>
+                                                <li><a href="/room_information/?I_number=<?=$R[number]?>"><?=$R[I_name_kr]?></a></li>
+                                                <?
+                                                }
+                                                ?>
+
+                                                <?/*
+												<li><a href="/room_information/sweet.html">스위트룸</a></li>
+												<li><a href="/room_information/family.html">패밀리룸</a></li>
+												<li><a href="/room_information/residecne.html">레지던스룸</a></li>
+												<li><a href="/room_information/villa.html">빌라</a></li>
+												<li><a href="/room_information/penthouse.html">펜트하우스</a></li>
+                                                */?>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">레스토랑 & 바</span>
+											<ul>
+												<li><a href="/restaurant/omber.html">OMBER</a></li>
+												<li><a href="/restaurant/mercado.html">MERCADO</a></li>
+												<li><a href="/restaurant/lala.html">LALA</a></li>
+												<li><a href="/restaurant/ink360.html">INK 360</a></li>
+												<li><a href="/restaurant/soraumi.html">SORA & UMI</a></li>
+												<li><a href="/restaurant/seashack.html">SEA SHACK</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">부대시설</span>
+											<ul>
+												<li><a href="/facilities/kidsclub.html">Kid`s club</a></li>
+												<li><a href="/facilities/spa.html">한 헤리티지 스파</a></li>
+												<li><a href="/facilities/fitness.html">피트니스</a></li>
+												<li><a href="/facilities/business.html">비즈니스</a></li>
+											</ul>
+										</li>
+										<li><a href="/pool/pool.html">수영장</a></li>
+										<li><a href="/reservation/">객실예약</a></li>
+										<li><a href="/customer_center/list.html">고객센터</a></li>
+									</ul>
+								</nav>
