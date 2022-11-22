@@ -1,48 +1,52 @@
 <? include("config.php3"); ?>
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<title>인터콘티넨탈 푸꾸옥 롱 비치 리조트 예약센터</title>
-<!-- meta tag-->
-<? include "head_common.html"; ?>		
-</head>
-<body class="is-preload">
-
-	<!-- Wrapper -->
-	<div id="wrapper">
-
-		<!-- Main -->
-		<div id="main">
-			<div class="inner">
-                <!-- Header -->
-                <header id="header">
-                    <a href="/" class="logo" title="<?=$WNW[D_name_kr]?> 로고"><strong><?=$WNW[D_name_kr]?></strong> <?=$WNW[D_name]?></a>
-                    <!-- Header icon -->
-                    <? include "include/header/icons.html"; ?>
-                </header>
-    			<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<header>
-                            <h2><?=$WNW[D_name_kr]?></h2>
-                            <p><?=$WNW[D_name]?></p>
-						</header>
-                        <p><?=nl2br($WNW[D_detail])?></p>
-						<ul class="actions">
-							<li><a href="#order" class="button big">예약 바로가기</a></li>
-						</ul>
-					</div>
-					<span class="image object">
-						<img src="/images/homepage/ac/vietnam/phuquoc/1.jpg" alt="인터콘티넨탈 푸꾸옥 롱 비치 리조트" />
-					</span>
-				</section>
-    			<!-- Section -->
-				<section>
-					<header class="major">
-						<h2>객실 정보</h2>
-					</header>
-					<div class="posts">
-                        <?
+  <head>
+    <title>1인터콘티넨탈 푸꾸옥 롱 비치 리조트 예약센터</title>
+    <!-- meta tag-->
+    <? include "head_common.html"; ?>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="/" class="logo" title="<?=$WNW[D_name_kr]?> 로고"
+              ><strong><?=$WNW[D_name_kr]?></strong>
+              <?=$WNW[D_name]?></a
+            >
+            <!-- Header icon -->
+            <? include "include/header/icons.html"; ?>
+          </header>
+          <!-- Banner -->
+          <section id="banner">
+            <div class="content">
+              <header>
+                <h2><?=$WNW[D_name_kr]?></h2>
+                <p><?=$WNW[D_name]?></p>
+              </header>
+              <p><?=nl2br($WNW[D_detail])?></p>
+              <ul class="actions">
+                <li><a href="#order" class="button big">예약 바로가기</a></li>
+              </ul>
+            </div>
+            <span class="image object">
+              <img
+                src="/images/homepage/ac/vietnam/phuquoc/1.jpg"
+                alt="인터콘티넨탈 푸꾸옥 롱 비치 리조트"
+              />
+            </span>
+          </section>
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>객실 정보</h2>
+            </header>
+            <div class="posts">
+              <?
                         $where = " where D_code='$D_code' " ;
                         $where.= " AND I_ok='Y' " ;
                         $qstring = "select * from ITEM $where order by I_seq " ;
@@ -53,40 +57,44 @@
                         $R = mysqli_fetch_array($result);
                         $link = "/room_information/?I_number=$R[number]" ;
                         ?>
-						<article>
-                            <a href="<?=$link?>" class="image"><img src="<?=$image_url?>/images/rooms/<?=$R[I_image]?>" title="<?=$WNW[D_name_kr]?> <?=$WNW[D_name]?> <?=$R[I_name_kr]?>" /></a>
-                            <h3><?=$R[I_name_kr]?></h3>
-                            <p><?=nl2br($R[I_text])?></p>
-							<ul class="actions">
-                                <li><a href="<?=$link?>" class="button">More</a></li>
-							</ul>
-						</article>
-						<?
+              <article>
+                <a href="<?=$link?>" class="image"
+                  ><img
+                    src="<?=$image_url?>/images/rooms/<?=$R[I_image]?>"
+                    title="<?=$WNW[D_name_kr]?> <?=$WNW[D_name]?> <?=$R[I_name_kr]?>"
+                /></a>
+                <h3><?=$R[I_name_kr]?></h3>
+                <p><?=nl2br($R[I_text])?></p>
+                <ul class="actions">
+                  <li><a href="<?=$link?>" class="button">More</a></li>
+                </ul>
+              </article>
+              <?
                         }
                         ?>
-					</div>
-				</section>
-    			<!-- 숙소 기본정보 Table -->
-				<? include "include/room_basic/basic.html"; ?>
-    			<!-- 객실 예약 Form -->
-				<? include "include/reservation/reservation.html"; ?>
-    			<!-- 실시간 예약현황 -->
-				<? include "include/booking/list.html"; ?>
-    			<!-- 질문과 답변 -->
-				<? include "include/qna/list.html"; ?>
-			</div>
-		</div>
-	    <!-- Sidebar -->
-		<div id="sidebar">
-			<div class="inner">
-				<? include "nav.html"; ?>
-				<? include "include/etc/input.html"; ?>
-				<? include "footer.html"; ?>
-			</div>
-		</div>
-</div>
+            </div>
+          </section>
+          <!-- 숙소 기본정보 Table -->
+          <? include "include/room_basic/basic.html"; ?>
+          <!-- 객실 예약 Form -->
+          <? include "include/reservation/reservation.html"; ?>
+          <!-- 실시간 예약현황 -->
+          <? include "include/booking/list.html"; ?>
+          <!-- 질문과 답변 -->
+          <? include "include/qna/list.html"; ?>
+        </div>
+      </div>
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <? include "nav.html"; ?>
+          <? include "include/etc/input.html"; ?>
+          <? include "footer.html"; ?>
+        </div>
+      </div>
+    </div>
 
-<!-- Scripts -->
-<? include "script.html"; ?>
-</body>
+    <!-- Scripts -->
+    <? include "script.html"; ?>
+  </body>
 </html>
